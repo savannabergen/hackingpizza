@@ -18,5 +18,6 @@
   {% if page < total_pages %}
     <a href="{{ url_for('index', page=page+1)}}"><button class="pagination-button">Next</button></a>
   {% endif %}
+  <a href="{{ url_for('index') }}">Reset</a>
 </div>
 {% endblock %}

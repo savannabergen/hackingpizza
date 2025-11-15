@@ -1,8 +1,11 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <h2>Search Results For: {{ query }}</h2>
 <div class="articles">
+    <div class="search-header">
+    <h2>Search Results For: {{ query }}</h2>
+    <a href="{{ url_for('index') }}">Reset</a>
+</div>
     {% for article in articles %}
     <article>
         <h2><a href="{{ article[1].link }}">{{ article[1].title }}</a></h2>
