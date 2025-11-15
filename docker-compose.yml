@@ -3,9 +3,7 @@ services:
   flask:
     build: .
     ports:
-      - "5000:5000"
+      - "80:5000"
     environment:
       - FLASK_APP=main.py
-      - FLASK_ENV=development
-    volumes:
-      - .:/app
+      - FLASK_ENV=production
