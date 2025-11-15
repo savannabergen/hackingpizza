@@ -9,7 +9,13 @@
 <body>
     <header>
         <h1>Farmers for Vimy and Eggs</h1>
-        <a href="https://www.glitchlabs.ca/">GlitchLabs</a>
+        <nav>
+          <a href="https://www.glitchlabs.ca/">GlitchLabs</a>
+          <a href="https://www.savannagrace.dev/">SavannaGrace.dev</a>
+        </nav>
+        <div class="ball-container">
+          <div class="ball"></div>
+        </div>
         <form action="{{ url_for('search') }}" method="GET">
             <input type="text" name="q" placeholder="Search for Keyword">
             <input type="submit" value="Search">
