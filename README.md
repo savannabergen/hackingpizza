@@ -7,5 +7,15 @@ Farmers for Vimy and Eggs
 To build the Docker image, navigate to the root directory of the project and run the following command:
 
 ```bash
-docker build -t  .
+docker-compose up --build
+```
+```bash
+docker build -t hacking-pizza .
+```
+## Running the Application
+
+To run the application, use the following command:
+
+```bash
+docker-compose up
 ```
