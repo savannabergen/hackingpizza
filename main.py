@@ -4,7 +4,12 @@ app = Flask(__name__)
 RSS_FEEDS = {
     'Canada News': 'https://api.io.canada.ca/io-server/gc/news/en/v2?sort=publishedDate&orderBy=desc&publishedDate%3E=2021-10-25&pick=100&format=atom&atomtitle=National%20News',
     'Business News': 'https://api.io.canada.ca/io-server/gc/news/en/v2?audience=business&sort=publishedDate&orderBy=desc&publishedDate%3E=2021-10-25&pick=100&format=atom&atomtitle=business',
-    'Dominic LeBlanc': 'https://api.io.canada.ca/io-server/gc/news/en/v2?minister=hondominicleblanc&sort=publishedDate&orderBy=desc&publishedDate%3E=2021-10-25&pick=100&format=atom&atomtitle=Hon.%20Dominic%20LeBlanc'
+    'Dominic LeBlanc': 'https://api.io.canada.ca/io-server/gc/news/en/v2?minister=hondominicleblanc&sort=publishedDate&orderBy=desc&publishedDate%3E=2021-10-25&pick=100&format=atom&atomtitle=Hon.%20Dominic%20LeBlanc',
+    'Evan Solomon': 'https://api.io.canada.ca/io-server/gc/news/en/v2?minister=honevansolomon&sort=publishedDate&orderBy=desc&publishedDate%3E=2021-10-25&pick=100&format=atom&atomtitle=Hon.%20Evan%20Solomon',
+    'Jobs': 'https://api.io.canada.ca/io-server/gc/news/en/v2?topic=jobsandtheworkplace&sort=publishedDate&orderBy=desc&publishedDate%3E=2021-10-25&pick=100&format=atom&atomtitle=Jobs%20and%20the%20workplace',
+    'Business': 'https://api.io.canada.ca/io-server/gc/news/en/v2?topic=businessandindustry&sort=publishedDate&orderBy=desc&publishedDate%3E=2021-10-25&pick=100&format=atom&atomtitle=Business%20and%20industry',
+    'One Canadian Economy': 'https://api.io.canada.ca/io-server/gc/news/en/v2?dept=onecanadianeconomy&sort=publishedDate&orderBy=desc&publishedDate%3E=2021-10-25&pick=100&format=atom&atomtitle=One%20Canadian%20Economy%20',
+    'Public Health Canada': 'https://api.io.canada.ca/io-server/gc/news/en/v2?dept=publichealthagencyofcanada&sort=publishedDate&orderBy=desc&publishedDate%3E=2021-07-23&pick=50&format=atom&atomtitle=Public%20Health%20Agency%20of%20Canada'
 }
 @app.route('/')
 def index():

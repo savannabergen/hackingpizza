@@ -9,12 +9,12 @@
 <body>
     <header>
         <h1>Farmers for Vimy and Eggs</h1>
+        <a href="https://www.glitchlabs.ca/">GlitchLabs</a>
         <form action="{{ url_for('search') }}" method="GET">
             <input type="text" name="q" placeholder="Search for Keyword">
             <input type="submit" value="Search">
         </form>
     </header>
     {% block content %}{% endblock %}
-    <script src="script.js"></script>
 </body>
 </html>
